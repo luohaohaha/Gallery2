@@ -19,3 +19,29 @@ res.srcDirs += [
 ```
 ##### (2) 设置不可用，设置页面是空实现，目前屏蔽掉了
 ##### (3) 其它问题待发现...
+
+
+
+
+
+
+
+
+### what did I do
+##### (1) Complete AS code structure
+##### (2) Code merge, merge the code of the original three directories together, package name unchanged
+##### (3) Compile so, move to the main project libs
+##### (4) Remove duplicate strings. All original tags marked with no_sdcard are removed. Only the default ones are retained.
+##### (5) Handled the crash exception, see line 326 of DataManager and line 272 of LocalSource
+##### (6) Fixed the issue of cropping at low resolution crash (copied a copy of cropped dimensions to values)
+---
+### Known issues
+##### (1) Picture editing is not available, because bc32 and bc64 in the raw folder will not be packaged in the APK. ScriptC_convolve3x3 initialization will not find the resource crash. I have added code in build.gralde, but Does not seem to take effect, please let me know if you know
+```
+res.srcDirs += [
+                    'src/main/res/raw/bc32',
+                    'src/main/res/raw/bc64',
+            ]
+```
+##### (2) Settings are unavailable. The settings page is empty. Currently blocked.
+##### (3) Other issues to be found ...
