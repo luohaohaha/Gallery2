@@ -18,7 +18,8 @@ res.srcDirs += [
             ]
 ```
 ##### (2) 设置不可用，设置页面是空实现，目前屏蔽掉了
-##### (3) 其它问题待发现...
+##### (3) 未适配权限申请，我把sdk版本改到了22
+##### (4) 其它问题待发现...
 
 
 
@@ -45,4 +46,5 @@ res.srcDirs += [
             ]
 ```
 ##### (2) Settings are unavailable. The settings page is empty. Currently blocked.
-##### (3) Other issues to be found ...
+##### (3) I did not apply for permission, I changed the SDK version to 22.
+##### (4) Other issues to be found ...
