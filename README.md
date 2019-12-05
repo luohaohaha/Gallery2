@@ -1,5 +1,5 @@
 # Gallery2
-AS版本的Gallery2,基于AOSP7.1
+一个可用Android Stusio编译的Gallery2，基于AOSP7.1(A Gallery2 that can be compiled with Android Stusio, based on AOSP7.1)
 
 ### 我做了什么
 ##### (1) 完完全全的AS代码结构
